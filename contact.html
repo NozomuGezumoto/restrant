@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+ <link rel="stylesheet" href="assets/css/new.css">
+ <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+ <title>tranquillité</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+</head>
+<body>
+   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark"> -->
+        <div class="header">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+       <a class="navbar-brand" href="#">tranquillité</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#pic">店舗紹介<a>
+            </li>
+            <li><a class="nav-link"href="#news">お知らせ<a></a>
+            </li>
+            <li><a class="nav-link"href="#map">Map<a></a>
+            </li>
+            <li><a class="nav-link"href="contact.html">お問い合わせ<a></a>
+            </li>
+           </ul>
+          </div>
+     </nav>
+    </div>
+      <!-- form -->
+      <div class="contact" id="contact">
+      <div class="container">
+        <h2>CONTACT</h2>
+            <form method="POST" action="check.php">
+                <table class="table" width="100%">
+                  <!-- コース -->
+                  <tr>
+                    <th height="30">
+                      <span style="color:rgb(187, 39, 39)">※</span>ご予約のコース
+                    </th>
+                    <td height="30">
+                      <select name="restaurants" id="">
+                        <option value="aコース">Aコース</option>
+                        <option value="bコース">Bコース</option>
+                        <option value="cコース">Cコース</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- 名前 -->
+                  <tr>
+                      <th>
+                        <span style="color:rgb(187, 39, 39)">※</span>お名前
+                      </th>
+                      <td>
+
+                            <input type="text" name="your_name" class="form-control" style="max-width:50%;">
+                      </td>
+                    </tr>
+                    <!-- フリガナ -->
+                    <tr>
+                        <th>
+                          <span style="color:rgb(187, 39, 39)">※</span>フリガナ
+                        </th>
+                        <td>
+                       <input type="text" name="your_kana" class="form-control"
+                       style="max-width: 50%;">
+                        </td>
+                      </tr>
+                      <!-- 日にち -->
+                      <!-- datepicker -->
+                      <tr>
+                          <th>
+                            <span style="color:rgb(187, 39, 39)">※</span>希望日
+                          </th>
+                          <td>
+                         <!-- <input type="text" name="reservation" value size="30" id="dp1572163397418" class="hasDatepicker"> -->
+                            <!-- ここにカレンダー表示用のテキストボックスを追加 -->
+                            <input type="text" name="reservation" value size="30" class="form-control"
+                            style="max-width: 50%;"
+                            id="date_sample">
+                          </div>
+                          </td>
+                        </tr>
+                </table>
+                <!-- date -->
+                <input type="submit" value="送信">
+              </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="bg-dark mt-5 py-2">
+        <p class="text-center">(c)tranquillité</p>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- -- bootstrap-datepickerを読み込む -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/js/bootstrap-datepicker.ja.min.js"></script>
+  <script>
+    $('#date_sample').datepicker(
+      {
+        language: 'ja'
+      }
+    );
+  </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
